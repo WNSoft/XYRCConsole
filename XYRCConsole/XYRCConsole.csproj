@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75570B66-86F6-42FE-A37F-ABB98E746DC9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XYRCConsole</RootNamespace>
+    <AssemblyName>XYRCConsole</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>c:\Users\Dan\Desktop\test\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\XYRCConsole.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\XYRCConsole.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A40C79C7105C8573B5F08DDD80688BC1B79845B1</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>XYRCConsole_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Messages\Miscellaneous\ErrorMessage.cs" />
+    <Compile Include="Messages\Miscellaneous\KillMessage.cs" />
+    <Compile Include="Messages\Miscellaneous\MiscellaneousMessage.cs" />
+    <Compile Include="Messages\Miscellaneous\PingMessage.cs" />
+    <Compile Include="Messages\Miscellaneous\PongMessage.cs" />
+    <Compile Include="Messages\Optional\AwayMessage.cs" />
+    <Compile Include="Messages\Optional\IsonMessage.cs" />
+    <Compile Include="Messages\Optional\OperwallCommandMessage.cs" />
+    <Compile Include="Messages\Optional\OptionalMessage.cs" />
+    <Compile Include="Messages\Optional\RehashCommandMessage.cs" />
+    <Compile Include="Messages\Optional\RestartCommandMessage.cs" />
+    <Compile Include="Messages\Optional\SummonMessage.cs" />
+    <Compile Include="Messages\Optional\UserhostMessage.cs" />
+    <Compile Include="Messages\Optional\UsersMessage.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\CommandResponsesMessage.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage001.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage002.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage003.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage004.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage005.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage200.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage201.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage202.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage203.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage204.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage205.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage206.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage207.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage208.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage209.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage210.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage211.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage212.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage219.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage221.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage234.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage235.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage242.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage243.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage251.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage252.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage253.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage254.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage255.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage256.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage257.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage258.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage259.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage261.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage262.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage263.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage300.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage301.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage302.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage303.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage305.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage306.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage311.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage312.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage313.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage314.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage315.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage317.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage318.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage319.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage321.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage322.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage323.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage324.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage325.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage331.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage332.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage341.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage342.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage346.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage347.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage348.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage349.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage351.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage352.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage353.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage364.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage365.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage366.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage367.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage368.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage369.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage371.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage372.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage374.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage375.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage376.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage381.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage382.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage383.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage391.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage392.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage393.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage394.cs" />
+    <Compile Include="Messages\Replies\CommandResponses\ResponseMessage395.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage401.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage402.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage403.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage404.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage405.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage406.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage407.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage409.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage411.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage412.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage413.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage414.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage421.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage422.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage423.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage424.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage431.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage432.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage433.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage436.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage441.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage442.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage443.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage444.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage445.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage446.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage451.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage461.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage462.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage463.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage464.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage465.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage467.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage471.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage472.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage473.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage474.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage475.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage481.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage482.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage483.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage491.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage501.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorMessage502.cs" />
+    <Compile Include="Messages\Replies\Errors\ErrorRepliesMessage.cs" />
+    <Compile Include="Messages\Replies\RepliesMessage.cs" />
+    <Compile Include="Messages\ServerQueriesAndCommands\AdminMessage.cs" />
+    <Compile Include="Messages\Channel\Mode\ChannelModesMessage.cs" />
+    <Compile Include="Messages\Channel\ChannelOperationsMessage.cs" />
+    <Compile Include="Messages\ConnectionRegistration\ConnectionRegistrationMessage.cs" />
+    <Compile Include="Messages\ServerQueriesAndCommands\ConnectMessage.cs" />
+    <Compile Include="Messages\ServerQueriesAndCommands\InfoMessage.cs" />
+    <Compile Include="Messages\Channel\InviteMessage.cs" />
+    <Compile Include="Messages\Channel\JoinMessage.cs" />
+    <Compile Include="Messages\Channel\KickMessage.cs" />
+    <Compile Include="Messages\ServerQueriesAndCommands\LinksMessage.cs" />
+    <Compile Include="Messages\Channel\ListMessage.cs" />
+    <Compile Include="Messages\Message.cs" />
+    <Compile Include="Messages\Channel\ModeMessage.cs" />
+    <Compile Include="Messages\Channel\NamesMessage.cs" />
+    <Compile Include="Messages\ConnectionRegistration\NicknameMessage.cs" />
+    <Compile Include="Messages\ConnectionRegistration\OperatorMessage.cs" />
+    <Compile Include="Messages\Channel\PartMessage.cs" />
+    <Compile Include="Messages\ConnectionRegistration\PasswordMessage.cs" />
+    <Compile Include="Messages\UserBasedQueries\UserBasedQueriesMessage.cs" />
+    <Compile Include="Messages\UserBasedQueries\WhoisQueryMessage.cs" />
+    <Compile Include="Messages\UserBasedQueries\WhoQueryMessage.cs" />
+    <Compile Include="Messages\UserBasedQueries\WhowasMessage.cs" />
+    <Compile Include="XYRC.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Messages\ConnectionRegistration\QuitMessage.cs" />
+    <Compile Include="ServerConnection.cs" />
+    <Compile Include="Messages\ConnectionRegistration\ServerMessage.cs" />
+    <Compile Include="Messages\ServerQueriesAndCommands\ServerQueriesAndCommandsMessage.cs" />
+    <Compile Include="Messages\ConnectionRegistration\ServerQuitMessage.cs" />
+    <Compile Include="Messages\ServerQueriesAndCommands\StatsMessage.cs" />
+    <Compile Include="Messages\ServerQueriesAndCommands\TimeMessage.cs" />
+    <Compile Include="Messages\Channel\TopicMessage.cs" />
+    <Compile Include="Messages\ServerQueriesAndCommands\TraceMessage.cs" />
+    <Compile Include="Messages\ConnectionRegistration\UserMessage.cs" />
+    <Compile Include="Messages\Channel\Mode\UserModesMessage.cs" />
+    <Compile Include="Messages\ServerQueriesAndCommands\VersionMessage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="XYRCConsole_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
