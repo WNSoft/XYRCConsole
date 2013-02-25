@@ -9,8 +9,8 @@ namespace XYRCConsole.Messages.Replies.CommandResponses
     /// <summary>
     /// No description in RFC 1459 (1993)
     /// </summary>
-    class ResponseMessage211 : CommandResponsesMessage
+    class ResponseMessage213 : CommandResponsesMessage
     {
-        public ResponseMessage211(String message) : base(message, 211, "RPL_STATSLINKINFO", "<linkname> <sendq> <sent messages> <sent bytes> <received messages> <received bytes> <time open>") { }
+        public ResponseMessage213(String message) : base(message, 213, "RPL_STATSCLINE", "C <host> * <name> <port> <class>") { }
     }
 }

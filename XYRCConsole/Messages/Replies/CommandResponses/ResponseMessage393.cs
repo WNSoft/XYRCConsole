@@ -7,10 +7,16 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.CommandResponses
 {
     /// <summary>
-    /// Used to show list of users.
+    /// From: RFC 1459 (1993)
+    /// If the USERS message is handled by a server, the
+    /// replies RPL_USERSTART, RPL_USERS, RPL_ENDOFUSERS and
+    /// RPL_NOUSERS are used.  RPL_USERSSTART must be sent
+    /// first, following by either a sequence of RPL_USERS
+    /// or a single RPL_NOUSER.  Following this is
+    /// RPL_ENDOFUSERS.
     /// </summary>
     class ResponseMessage393 : CommandResponsesMessage
     {
-        public ResponseMessage393(String message) : base(message) { }
+        public ResponseMessage393(String message) : base(message, 393, "RPL_USERS", ":%-8s %-9s %-8s") { }
     }
 }

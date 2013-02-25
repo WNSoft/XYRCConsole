@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.CommandResponses
 {
     /// <summary>
-    /// Used to show channel mode.
+    /// No description in RFC 1459 (1993)
     /// </summary>
     class ResponseMessage324 : CommandResponsesMessage
     {
-        public ResponseMessage324(String message) : base(message) { }
+        public ResponseMessage324(String message) : base(message, 324, "RPL_CHANNELMODEIS", "<channel> <mode> <mode params>") { }
     }
 }

@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.CommandResponses
 {
     /// <summary>
-    /// Used to report statistics on commands usage.
+    /// No description in RFC 1459 (1993)
     /// </summary>
     class ResponseMessage212 : CommandResponsesMessage
     {
-        public ResponseMessage212(String message) : base(message) { }
+        public ResponseMessage212(String message) : base(message, 212, "RPL_STATSCOMMANDS", "<command> <count>") { }
     }
 }

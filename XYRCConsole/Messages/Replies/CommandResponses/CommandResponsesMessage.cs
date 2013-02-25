@@ -7,11 +7,10 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.CommandResponses
 {
     /// <summary>
-    /// Numeric non-error replies which are generated in response to a command.
+    /// No description in RFC 1459 (1993)
     /// </summary>
     class CommandResponsesMessage : RepliesMessage
     {
-        //Temporary constructor args
-        public CommandResponsesMessage(String message) : base(message, 000, "", "") { }
+        public CommandResponsesMessage(String message, int numeric, String name, String replyString) : base(message, numeric, name, replyString) { }
     }
 }

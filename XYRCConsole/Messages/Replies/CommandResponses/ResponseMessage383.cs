@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.CommandResponses
 {
     /// <summary>
-    /// Sent to a service upon successful registration.
+    /// From: RFC 2812 (2000)
+    /// Sent by the server to a service upon successful
+    /// registration.
     /// </summary>
     class ResponseMessage383 : CommandResponsesMessage
     {
-        public ResponseMessage383(String message) : base(message) { }
+        public ResponseMessage383(String message) : base(message, 383, "RPL_YOURESERVICE", "You are service <servicename>") { }
     }
 }

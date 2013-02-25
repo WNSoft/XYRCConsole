@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.CommandResponses
 {
     /// <summary>
-    /// Sent upon connection.  Used to welcome user.
+    /// From: RFC 2812 (2000)
+    /// The server sends Replies 001 to 004 to a user upon
+    /// successful registration.
     /// </summary>
     class ResponseMessage001 : CommandResponsesMessage
     {
-        public ResponseMessage001(String message) : base(message) { }
+        public ResponseMessage001(String message) : base(message, 001, "RPL_WELCOME", "Welcome to the Internet Relay Network <nick>!<user>@<host>") { }
     }
 }

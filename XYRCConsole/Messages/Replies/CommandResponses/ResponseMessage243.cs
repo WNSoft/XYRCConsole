@@ -7,11 +7,10 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.CommandResponses
 {
     /// <summary>
-    /// Used to report the allowed hosts from where user
-    /// may become IRC operators.
+    /// No description in RFC 1459 (1993)
     /// </summary>
     class ResponseMessage243 : CommandResponsesMessage
     {
-        public ResponseMessage243(String message) : base(message) { }
+        public ResponseMessage243(String message) : base(message, 243, "RPL_STATSOLINE", "O <hostmask> * <name>") { }
     }
 }

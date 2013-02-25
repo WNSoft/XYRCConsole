@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.CommandResponses
 {
     /// <summary>
-    /// Sent upon connection.  Used to show server info.
+    /// From: RFC 2812 (2000)
+    /// The server sends Replies 001 to 004 to a user upon
+    /// successful registration.
     /// </summary>
     class ResponseMessage004 : CommandResponsesMessage
     {
-        public ResponseMessage004(String message) : base(message) { }
+        public ResponseMessage004(String message) : base(message, 004, "RPL_MYINFO", "<servername> <version> <available user modes> <available channel modes>") { }
     }
 }

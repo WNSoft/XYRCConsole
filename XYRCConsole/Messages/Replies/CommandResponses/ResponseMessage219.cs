@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.CommandResponses
 {
     /// <summary>
-    /// Used to indicate the end of stats report.
+    /// No description in RFC 1459 (1993)
     /// </summary>
     class ResponseMessage219 : CommandResponsesMessage
     {
-        public ResponseMessage219(String message) : base(message) { }
+        public ResponseMessage219(String message) : base(message, 219, "RPL_ENDOFSTATS", "<stats letter> :End of /STATS report") { }
     }
 }

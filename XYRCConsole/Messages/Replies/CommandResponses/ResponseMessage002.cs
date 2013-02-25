@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.CommandResponses
 {
     /// <summary>
-    /// Sent upon connection.  Used to display user host.
+    /// From: RFC 2812 (2000)
+    /// The server sends Replies 001 to 004 to a user upon
+    /// successful registration.
     /// </summary>
     class ResponseMessage002 : CommandResponsesMessage
     {
-        public ResponseMessage002(String message) : base(message) { }
+        public ResponseMessage002(String message) : base(message, 002, "RPL_YOURHOST", "Your host is <servername>, running version <ver>") { }
     }
 }

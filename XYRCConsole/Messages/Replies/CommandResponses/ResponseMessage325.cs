@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.CommandResponses
 {
     /// <summary>
-    /// Used to indicate op.
+    /// No description in RFC 2812 (2000)
     /// </summary>
     class ResponseMessage325 : CommandResponsesMessage
     {
-        public ResponseMessage325(String message) : base(message) { }
+        public ResponseMessage325(String message) : base(message, 325, "RPL_UNIQOPIS", "<channel> <nickname>") { }
     }
 }

@@ -7,10 +7,13 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.CommandResponses
 {
     /// <summary>
-    /// Used to indicate the invite message was successful.
+    /// From: RFC 1459 (1993)
+    /// Returned by the server to indicate that the
+    /// attempted INVITE message was successful and is
+    /// being passed onto the end client.
     /// </summary>
     class ResponseMessage341 : CommandResponsesMessage
     {
-        public ResponseMessage341(String message) : base(message) { }
+        public ResponseMessage341(String message) : base(message, 341, "RPL_INVITING", "<channel> <nick>") { }
     }
 }

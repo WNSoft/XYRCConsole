@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.CommandResponses
 {
     /// <summary>
-    /// Used to answer a query about a client's own mode.
+    /// From: RFC 1459 (1993)
+    /// To answer a query about a client's own mode,
+    /// RPL_UMODEIS is sent back.
     /// </summary>
     class ResponseMessage221 : CommandResponsesMessage
     {
-        public ResponseMessage221(String message) : base(message) { }
+        public ResponseMessage221(String message) : base(message, 221, "RPL_UMODEIS", "<user mode string>") { }
     }
 }

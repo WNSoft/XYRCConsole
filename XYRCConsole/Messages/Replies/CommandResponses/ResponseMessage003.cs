@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.CommandResponses
 {
     /// <summary>
-    /// Sent upon connection.  Used to show server creation date.
+    /// From: RFC 2812 (2000)
+    /// The server sends Replies 001 to 004 to a user upon
+    /// successful registration.
     /// </summary>
     class ResponseMessage003 : CommandResponsesMessage
     {
-        public ResponseMessage003(String message) : base(message) { }
+        public ResponseMessage003(String message) : base(message, 003, "RPL_CREATED", "This server was created <date>") { }
     }
 }

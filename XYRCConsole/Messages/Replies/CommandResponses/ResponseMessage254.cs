@@ -7,10 +7,18 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.CommandResponses
 {
     /// <summary>
-    /// Used to show how many channels the server has.
+    /// From: RFC 1459 (1993)
+    /// In processing an LUSERS message, the server
+    /// sends a set of replies from RPL_LUSERCLIENT,
+    /// RPL_LUSEROP, RPL_USERUNKNOWN,
+    /// RPL_LUSERCHANNELS and RPL_LUSERME.  When
+    /// replying, a server must send back
+    /// RPL_LUSERCLIENT and RPL_LUSERME.  The other
+    /// replies are only sent back if a non-zero count
+    /// is found for them.
     /// </summary>
     class ResponseMessage254 : CommandResponsesMessage
     {
-        public ResponseMessage254(String message) : base(message) { }
+        public ResponseMessage254(String message) : base(message, 254, "RPL_LUSERCHANNELS", "<integer> :channels formed") { }
     }
 }

@@ -7,10 +7,13 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.CommandResponses
 {
     /// <summary>
-    /// Used to list all server links matching the mask.
+    /// From: RFC 1459 (1993)
+    /// In replying to the LINKS message, a server must send
+    /// replies back using the RPL_LINKS numeric and mark the
+    /// end of the list using an RPL_ENDOFLINKS reply
     /// </summary>
     class ResponseMessage364 : CommandResponsesMessage
     {
-        public ResponseMessage364(String message) : base(message) { }
+        public ResponseMessage364(String message) : base(message, 364, "RPL_LINKS", "<mask> <server> :<hopcount> <server info>") { }
     }
 }
