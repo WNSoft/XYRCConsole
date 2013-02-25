@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.Errors
 {
     /// <summary>
-    /// Numeric error replies which are generated in response to a command.
+    /// No description in RFC 1459 (1993)
     /// </summary>
     class ErrorRepliesMessage : RepliesMessage
     {
-        public ErrorRepliesMessage(String message) : base(message) { }
+        public ErrorRepliesMessage(String message, int numeric, String name, String replyString) : base(message, numeric, name, replyString) { }
     }
 }

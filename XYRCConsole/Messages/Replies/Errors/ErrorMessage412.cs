@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.Errors
 {
     /// <summary>
-    /// Returned by PRIVMSG to indicate that the message wasn't delivered
-    /// for some reason.  No text to send.
+    /// From: RFC 1459 (1993)
+    /// 412 - 414 are returned by PRIVMSG to indicate that the
+    /// message wasn't delivered for some reason.
     /// </summary>
     class ErrorMessage412 : ErrorRepliesMessage
     {
-        public ErrorMessage412(String message) : base(message) { }
+        public ErrorMessage412(String message) : base(message, 412, "ERR_NOTEXTTOSEND", ":No text to send") { }
     }
 }

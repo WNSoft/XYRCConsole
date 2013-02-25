@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.Errors
 {
     /// <summary>
-    /// Used to indicate the nickname parameter supplied to a command is currently unused.
+    /// From: RFC 1459 (1993)
+    /// Used to indicate the nickname parameter supplied
+    /// to a command is currently unused.
     /// </summary>
     class ErrorMessage401 : ErrorRepliesMessage
     {
-        public ErrorMessage401(String message) : base(message) { }
+        public ErrorMessage401(String message) : base(message, 401, "ERR_NOSUCHNICK", "<nickname> :No such nick/channel") { }
     }
 }

@@ -11,6 +11,7 @@ namespace XYRCConsole.Messages.Replies.CommandResponses
     /// </summary>
     class CommandResponsesMessage : RepliesMessage
     {
-        public CommandResponsesMessage(String message) : base(message) { }
+        //Temporary constructor args
+        public CommandResponsesMessage(String message) : base(message, 000, "", "") { }
     }
 }

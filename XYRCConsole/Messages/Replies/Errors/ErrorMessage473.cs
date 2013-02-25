@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.Errors
 {
     /// <summary>
-    /// Returned if trying to join an invite only channel.
+    /// No description in RFC 1459 (1993)
     /// </summary>
     class ErrorMessage473 : ErrorRepliesMessage
     {
-        public ErrorMessage473(String message) : base(message) { }
+        public ErrorMessage473(String message) : base(message, 473, "ERR_INVITEONLYCHAN", "<channel> :Cannot join channel (+i)") { }
     }
 }

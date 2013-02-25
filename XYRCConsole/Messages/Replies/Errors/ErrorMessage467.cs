@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.Errors
 {
     /// <summary>
-    /// Channel key already set.
+    /// No description in RFC 1459 (1993)
     /// </summary>
     class ErrorMessage467 : ErrorRepliesMessage
     {
-        public ErrorMessage467(String message) : base(message) { }
+        public ErrorMessage467(String message) : base(message, 467, "ERR_KEYSET", "<channel> :Channel key already set") { }
     }
 }

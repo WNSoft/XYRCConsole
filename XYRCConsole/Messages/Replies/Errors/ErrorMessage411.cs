@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.Errors
 {
     /// <summary>
-    /// No recipient given.
+    /// No description in RFC 1459 (1993)
     /// </summary>
     class ErrorMessage411 : ErrorRepliesMessage
     {
-        public ErrorMessage411(String message) : base(message) { }
+        public ErrorMessage411(String message) : base(message, 411, "ERR_NORECIPIENT", ":No recipient given (<command>)") { }
     }
 }

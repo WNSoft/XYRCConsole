@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.Errors
 {
     /// <summary>
-    /// Returned if mode is not recognized.
+    /// No description in RFC 1459 (1993)
     /// </summary>
     class ErrorMessage472 : ErrorRepliesMessage
     {
-        public ErrorMessage472(String message) : base(message) { }
+        public ErrorMessage472(String message) : base(message, 472, "ERR_UNKNOWNMODE", "<char> :is unknown mode char to me") { }
     }
 }

@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace XYRCConsole.Messages.Replies.Errors
 {
     /// <summary>
-    /// Returned if trying to join a full channel.
+    /// No description in RFC 1459 (1993)
     /// </summary>
     class ErrorMessage471 : ErrorRepliesMessage
     {
-        public ErrorMessage471(String message) : base(message) { }
+        public ErrorMessage471(String message) : base(message, 471, "ERR_CHANNELISFULL", "<channel> :Cannot join channel (+l)") { }
     }
 }
